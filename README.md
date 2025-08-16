@@ -115,11 +115,7 @@ This image likely visualizes employees flagged as 'safe' by the ML model, showin
 
 ![InSid_ML_Safe](Screenshots/InSid_ML_Safe.png)
 
-### 5. InSId ML.png
-This screenshot may show the machine learning workflow, model architecture, or another aspect of the ML process. It helps users understand the steps and logic behind the threat detection system.
-
-![InSId ML](Screenshots/InSId%20ML.png)
-
+   
 
 
 ---
