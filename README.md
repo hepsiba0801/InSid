@@ -83,12 +83,6 @@ The output CSV contains:
 - `risk_score`: Normalized risk score (0 to 1)
 - `anomaly_flag`: Categorization (`normal`, `suspicious`, `insider`)
 
-### Risk Score Distribution Plot
-
-This plot shows the distribution of risk scores assigned to employees by the Isolation Forest model. It helps visualize how many employees fall into each risk category (normal, suspicious, insider).
-
-![Risk Score Distribution](Screenshots/risk_score_distribution.png)
-
 ---
 
 ## Screenshots & Analysis
@@ -115,7 +109,7 @@ This image likely visualizes employees flagged as 'safe' by the ML model, showin
 
 ![InSid_ML_Safe](Screenshots/InSid_ML_Safe.png)
 
-   
+
 
 
 ---
