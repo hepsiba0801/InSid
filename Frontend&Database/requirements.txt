@@ -1,0 +1,7 @@
+# Frontend & Database Requirements
+# Add your frontend and database dependencies here
+# For example:
+# streamlit>=1.25.0
+# flask>=2.3.0
+# sqlite3 (built-in with Python)
+# or other database connectors
