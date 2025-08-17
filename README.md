@@ -17,6 +17,7 @@ hepsi_hac/
 │   ├── insider_threat_results.csv   # Generated after running main.py
 │
 ├── Frontend&Database/
+│   ├── Frontend.py
 │   └── requirements.txt
 │
 ├── Screenshots/
@@ -24,9 +25,13 @@ hepsi_hac/
 │   ├── InSid_email_alert.png
 │   ├── InSid_Frontend.png
 │   ├── InSid_ML_Safe.png
-
+│
+├── InSid_flowchart/
+│
+├── InSid_architecture/
 │
 └── README.md
+
 ```
 
 ## Requirements
