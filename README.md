@@ -1,8 +1,8 @@
-# Insider Threat Detection with Isolation Forest
+# Insider Threat Detection 
 
 ## Overview
 
-This project uses machine learning (Isolation Forest algorithm) to detect insider threats in employee datasets. It analyzes numerical features, assigns risk scores, and flags anomalies (normal, suspicious, insider). Results are saved to a CSV file and visualized as a histogram.
+This project uses machine learning (Isolation Forest algorithm) to detect insider threats in employee datasets. It analyzes numerical features, assigns safe scores, and flags anomalies (normal, suspicious, insider). Results are saved to a CSV file and visualized as a histogram.
 
 ## Folder Structure
 
@@ -15,17 +15,16 @@ hepsi_hac/
 │   │   └── refined_employee_dataset.csv
 │   ├── requirements.txt
 │   ├── insider_threat_results.csv   # Generated after running main.py
-│   └── risk_score_distribution.png  # Generated plot
 │
 ├── Frontend&Database/
 │   └── requirements.txt
 │
 ├── Screenshots/
-│   ├── Screenshot 2025-08-16 201247.png
-│   ├── Screenshot 2025-08-16 201657.png
+│   ├── InSid_database.png
+│   ├── InSid_email_alert.png
 │   ├── InSid_Frontend.png
 │   ├── InSid_ML_Safe.png
-│   └── InSId ML.png
+
 │
 └── README.md
 ```
@@ -50,7 +49,7 @@ pip install -r requirements.txt
 2. **Feature Selection:** Selects all numerical columns except the target (`is_emp_malicious`).
 3. **Preprocessing:** Fills missing values with zero and normalizes features.
 4. **Model Training:** Trains an Isolation Forest to detect anomalies.
-5. **Scoring:** Assigns a risk score to each employee.
+5. **Scoring:** Assigns a safe score to each employee.
 6. **Flagging:** Categorizes employees as `normal`, `suspicious`, or `insider`.
 7. **Output:** Saves results to `Backend/insider_threat_results.csv` and generates a histogram plot.
 
@@ -70,7 +69,7 @@ pip install -r requirements.txt
 
 4. After execution:
    - Results are saved in `Backend/insider_threat_results.csv`.
-   - A plot of risk score distribution is saved as `Backend/risk_score_distribution.png`.
+   - A plot of safe score distribution is saved as `Backend/safe_score_distribution.png`.
 
 
 ## Output Example
@@ -80,7 +79,7 @@ pip install -r requirements.txt
 The output CSV contains:
 - All original columns
 - `raw_score`: Isolation Forest decision function value
-- `risk_score`: Normalized risk score (0 to 1)
+- `safescore`: Normalized safe score (0 to 1)
 - `anomaly_flag`: Categorization (`normal`, `suspicious`, `insider`)
 
 ---
@@ -89,15 +88,15 @@ The output CSV contains:
 
 Below are additional screenshots that illustrate various aspects of the project, its results, and its interface:
 
-### 1. Screenshot 2025-08-16 201247.png
-This screenshot likely shows the initial output or a summary table from the model, such as the risk scores and anomaly flags assigned to employees. It helps visualize how the model categorizes data and the distribution of results.
+### 1. InSid_database.png
+This screenshot likely shows the initial output or a summary table from the model, such as the safe scores and anomaly flags assigned to employees. It helps visualize how the model categorizes data and the distribution of results.
 
-![Screenshot 2025-08-16 201247](Screenshots/Screenshot%202025-08-16%20201247.png)
+![Screenshot 2025-08-16 201247](InSid_database.png)
 
-### 2. Screenshot 2025-08-16 201657.png
+### 2.InSid_email_alert.png
 This image may display a more detailed view, such as a zoomed-in section of the results, a confusion matrix, or a feature importance plot. It provides deeper insight into the model's performance and decision boundaries.
 
-![Screenshot 2025-08-16 201657](Screenshots/Screenshot%202025-08-16%20201657.png)
+![Screenshot 2025-08-16 201657](InSid_email_alert.png)
 
 ### 3. InSid_Frontend.png
 This screenshot appears to be from a frontend interface for the project, possibly showing a dashboard or user interface where results are presented interactively. It demonstrates how the model's output can be integrated into a user-facing application.
